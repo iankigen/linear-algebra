@@ -25,6 +25,9 @@ class Vector(object):
 	def __sub__(self, vector):
 		return numpy.array(self.coordinates) - numpy.array(vector.coordinates)
 
+	def __mul__(self, factor):
+		return numpy.array(self.coordinates) * factor
+
 
 my_vector = Vector([1, 2, 3])
 print(my_vector)
@@ -37,3 +40,4 @@ print(my_vector == my_vector2)
 
 print(my_vector + my_vector1)
 print(my_vector - my_vector1)
+print(my_vector * 2)
