@@ -20,12 +20,15 @@ class Vector(object):
 		return self.coordinates == vector.coordinates
 
 	def __add__(self, vector):
+		# add
 		return numpy.array(self.coordinates) + numpy.array(vector.coordinates)
 
 	def __sub__(self, vector):
+		# subtract
 		return numpy.array(self.coordinates) - numpy.array(vector.coordinates)
 
 	def __mul__(self, factor):
+		# scalar multiplication
 		return numpy.array(self.coordinates) * factor
 
 
